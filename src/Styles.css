@@ -1,0 +1,63 @@
+.event-container {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+        0px 1.6px 3.6px rgba(0, 0, 0, 0.1);
+}
+
+.event-main-info {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 0px 15px;
+    flex: 1 1 0px;
+}
+
+.event-picture {
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* object-fit:cover is used to crop the image in a way that it fits and has good resolution*/
+div.event-picture > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*Maybe a div which will containn info about start time, end time and event name*/
+.short-description {
+    flex: 1 1 0px;
+    margin: 5px;
+}
+
+.event-name-text {
+    display: block;
+    margin: 3px 0px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.event-times{
+    margin: 3px 0px;
+    font-weight: bold;
+    color: grey;
+}
+/*Will host the Info button (which will open the modal)*/
+.info-button-container {
+    align-self: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: x-large;
+}
