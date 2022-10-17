@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import AddEvent from './AddEventModal';
 import { Event } from './EventComponent';
 
 
@@ -9,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div>
-      <Event></Event>
+      <AddEvent></AddEvent>
     </div>
   </React.StrictMode>
 );

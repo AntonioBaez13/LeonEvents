@@ -61,3 +61,66 @@ div.event-picture > img {
     cursor: pointer;
     font-size: x-large;
 }
+
+/*Modal styles*/
+.modal-window {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    padding: 10px;
+    width: 475px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.modal-header {
+    margin: 6px;
+    display: flex;
+    position: relative;
+}
+
+.modal-header-title {
+    flex: 1 1 0px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.modal-header-close {
+    cursor: pointer;
+    font-size: x-large;
+    align-self: center ;
+    margin: 3px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body * {
+    margin: 5px 5px 5px 0px;
+}
+
+.modal-footer {
+    margin: 6px;
+    text-align: center;
+}
+
+.upload-image-button {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    color: rgba(93, 92, 92, 0.87);
+    margin-left: 5px;
+    cursor: pointer;
+}
