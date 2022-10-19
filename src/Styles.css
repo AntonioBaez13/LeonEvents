@@ -93,6 +93,8 @@ div.event-picture > img {
     flex: 1 1 0px;
     font-size: 2em;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .modal-header-close {
@@ -123,4 +125,84 @@ div.event-picture > img {
     color: rgba(93, 92, 92, 0.87);
     margin-left: 5px;
     cursor: pointer;
+}
+
+/*Side panel styles*/
+.side-panel {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.side-panel-content {
+    overflow-y: auto;
+    width: 500px;
+    height: 100%;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 10px 3px;
+}
+
+.panel-image-container {
+    width: fit-content;
+    height: 200px;
+}
+
+/* object-fit:cover is used to crop the image in a way that it fits and has good resolution*/
+div.panel-image-container>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-event-main-info{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(191, 191, 191);
+}
+
+.panel-event-date{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.panel-event-date > *{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+.panel-event-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.panel-sub-sections{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(191, 191, 191);
+}
+
+.panel-sub-heading {
+    margin: 0px 0 10px 0;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.modal-header.panel {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(191, 191, 191);
 }
