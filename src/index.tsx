@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import AddEvent from './AddEventModal';
+import DatesList from './DateHolderComponent';
 import { Event } from './EventComponent';
 import EventInfoPanel from './InfoSidePanel';
 
@@ -11,7 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div>
-      <EventInfoPanel></EventInfoPanel>
+      <DatesList></DatesList>
     </div>
   </React.StrictMode>
 );
