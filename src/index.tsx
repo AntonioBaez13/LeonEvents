@@ -4,6 +4,7 @@ import AddEvent from './AddEventModal';
 import DatesList from './DateHolderComponent';
 import { Event } from './EventComponent';
 import EventInfoPanel from './InfoSidePanel';
+import TopBar from './TopBar';
 
 
 const root = ReactDOM.createRoot(
@@ -11,8 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div>
+      <TopBar></TopBar>
       <DatesList></DatesList>
-    </div>
   </React.StrictMode>
 );
