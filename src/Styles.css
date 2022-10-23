@@ -14,6 +14,7 @@ body{
 }
 
 .event-main-info {
+    background-color: white;
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -64,6 +65,10 @@ div.event-picture > img {
     margin: 5px;
     cursor: pointer;
     font-size: x-large;
+}
+
+.info-button-container:hover{
+    color: grey;
 }
 
 /*Modal styles*/
@@ -211,6 +216,10 @@ div.panel-image-container>img {
     border-bottom: 1px solid rgb(191, 191, 191);
 }
 
+.list-of-events-container{
+    margin: 5px;
+}
+
 .show-date {
     display: flex;
     gap: 5px;
@@ -250,7 +259,7 @@ div.panel-image-container>img {
 
 .top-bar-tools {
     align-self: center;
-    margin: 0 2%;
+    margin: 0  2%;
     display: flex;
     justify-content: center;
 }
@@ -267,4 +276,26 @@ div.panel-image-container>img {
 
 .add-event-button:hover{
     color: grey;
+}
+
+.main-page-content {
+    background-image: linear-gradient(rgb(198, 229, 241),rgba(255, 0, 0, 0));
+    display: flex;
+    padding: 15px 30px;
+    gap: 25px;
+}
+
+.long-list-section {
+    background-color: rgb(249, 243, 243);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 80%;
+    padding: 0 5px;
+}
+
+.filters-and-adds {
+    background-color: rgb(249, 243, 243);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 20%;
 }

@@ -14,7 +14,7 @@ interface DatesHolderprops {
 
 function DatesHolder(props: DatesHolderprops){
     return(
-        <div>
+        <div className='list-of-events-container'>
             <div className='show-date'>
                 <span>{rightArrow}</span>
                 <span>{StringToLongFormattedDate(props.day)}</span>
